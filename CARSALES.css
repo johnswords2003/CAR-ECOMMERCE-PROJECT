@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+header{
+    width: 100%;
+    max-width: 100%;
+    padding-left: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    background-color:black;
+} header nav a{
+    color:white;
+    margin-right: 5px;
+    padding: 5pxpx 10px;
+    font-size: 16px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+a.active{
+    background: green;
+    border-radius: 2px;
+}
+a:hover{
+    background: green;
+    border-radius: 2px;
+}
+
+
+.CARSALES{
+    position: absolute;
+    right:0%;
+    bottom: 0%;
+    z-index:-1;
+}
+
+@media(min-aspect-ratio:16/9){
+      .CARSALES{
+        width: 100%;
+        height: auto
+
+      }
+}
+      @media(max-aspect-ratio:16/9){
+      .CARSALES{
+        width: 100%;
+        height: auto
+
+      }
+    }
+
+
+    .name{
+        text-align: center;
+    }
+    .name h1{
+        font-size: 160px;
+        color:blue;
+        font-weight: 600px;
+        transition: 0.5s;
+    }
+        .name {
+          display: flex;
+          justify-content: center; /* Horizontally centers the content */
+          align-items: center;     /* Vertically centers the content */
+          height: 100vh;           /* Make sure it takes the full viewport height */
+          text-align: center;      /* Ensure text is centered within h1 */
+    }
+    .name h1:hover{
+        -webkit-text-stroke: 2px blue;
+        color: green;
+    }
+    
